@@ -1,0 +1,138 @@
+/* Estilo geral do corpo */
+body {
+    background-color: rgb(220, 235, 255);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Alinha em coluna */
+   
+}
+
+/* Estilo dos títulos */
+h1 {
+    color: rgb(30, 60, 120);
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 20px; /* Espaçamento inferior do título */
+}
+
+/* Estilo do contêiner principal */
+#menuDivido {
+    display: flex; /* Alinha o formulário e os botões lado a lado */
+    justify-content: center; /* Centraliza o contêiner */
+}
+
+/* Estilo do formulário */
+#formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 80px;
+    max-width: 400px; /* Largura máxima do formulário */
+}
+
+/* Estilo do contêiner dos botões */
+.botoes-container {
+    display: flex;
+    flex-direction: column; /* Botões em coluna */
+    align-items: center !important; /* Centraliza os botões horizontalmente */
+    justify-content: center !important; /* Centraliza os botões verticalmente */
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 8px;
+    margin-left: 60px; /* Espaço entre o formulário e os botões */
+    margin-top: 80px;
+    height: 500px; /* Ajuste conforme necessário */
+}
+
+/* Estilo dos campos de input */
+input[type="text"] {
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+}
+
+/* Estilo dos checkboxes e labels */
+input[type="checkbox"] {
+    display: none; 
+}
+
+label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(30, 60, 120);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-color: rgb(34, 193, 195);
+    border-color: rgb(34, 193, 195);
+}
+
+/* Estilo dos botões */
+.botoes-container input[type="submit"] {
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(34, 193, 195);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding: 10px 20px;
+    text-align: center !important;
+    margin-top: 10px; /* Espaço superior entre os botões */
+    width: 150px; /* Largura fixa para os botões */
+}
+
+#botaoenviar{
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(34, 193, 195);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important; /* Centraliza os itens na horizontal */
+    text-align: center !important;
+    margin-top: 10px; /* Espaço superior entre os botões */
+    width: 150px; /* Largura fixa para os botões */
+}
+
+input[type="text"], input[type="password"] {
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    width: calc(100% - 20px); /* Ajuste automático para manter o mesmo tamanho */
+}

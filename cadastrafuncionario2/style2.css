@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(220, 235, 255); /* Tom de fundo azul claro */
+    font-family: Arial, sans-serif; /* Fonte mais legível */
+    margin: 0;
+    padding: 0;
+}
+/* Estilo do formulário de filtragem */
+#filtragem {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    font-family: Arial, sans-serif;
+    font-size: medium;
+    margin: 20px auto; /* Margem automática para centralizar o formulário */
+    padding: 20px; /* Espaçamento interno do formulário */
+    max-width: 600px; /* Largura máxima para o formulário */
+    background-color: #f9f9f9; /* Cor de fundo suave para o formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar o formulário */
+}
+
+#filtragem p {
+    margin: 10px 0 5px; /* Margem ao redor dos rótulos dos campos de entrada */
+    font-weight: bold; /* Destaca os rótulos dos campos de entrada */
+}
+
+#filtragem input[type="text"] {
+    font-size: 1rem; /* Tamanho da fonte dos campos de entrada */
+    padding: 8px; /* Espaçamento interno nos campos de entrada */
+    margin-bottom: 15px; /* Espaço abaixo de cada campo de entrada */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 4px; /* Bordas arredondadas dos campos de entrada */
+    width: 100%; /* Campos de entrada ocupam toda a largura do formulário */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+#btnenviar {
+    margin-left: 240px;
+    font-size: 1rem; /* Tamanho da fonte ajustado */
+    height: 40px;
+    width: 100px;
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: rgb(34, 193, 195); /* Tom de verde azulado */
+    color: #fff; /* Texto branco para contraste */
+    text-align: center;
+    line-height: 40px; /* Alinha o texto verticalmente no centro do botão */
+    text-decoration: none; /* Remove sublinhado dos links */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    cursor: pointer; /* Indicador de clique */
+    border: none; /* Remove a borda padrão do botão */
+}
+
+#btnenviar:hover {
+    background-color: rgb(26, 162, 163); /* Cor do botão ao passar o mouse */
+}
+
+#btnenviar:active {
+    background-color: rgb(20, 130, 131); /* Cor do botão ao clicar */
+}
+
+/* Define o estilo geral para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre bordas */
+    margin: 20px 0; /* Espaçamento acima e abaixo da tabela */
+    font-family: Arial, sans-serif; /* Define a fonte da tabela */
+    background-color: #fff; /* Fundo branco para clareza */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para as células da tabela */
+th, td {
+    border: 1px solid #bbb; /* Borda leve para células */
+    padding: 12px; /* Espaçamento interno das células */
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+/* Estilo para os cabeçalhos das colunas */
+th {
+    background-color: rgb(30, 60, 120); /* Cor de fundo azul escuro para cabeçalhos */
+    color: white; /* Cor do texto dos cabeçalhos */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo para as linhas de dados */
+tr:nth-child(even) {
+    background-color: rgb(240, 250, 255); /* Cor de fundo alternada azul muito claro para linhas pares */
+}
+
+tr:hover {
+    background-color: rgb(220, 235, 255); /* Cor de fundo azul claro ao passar o mouse sobre a linha */
+}
+
+/* Adiciona uma leve sombra à tabela */
+table {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}

@@ -1,0 +1,56 @@
+body {
+    background-color: #a4f9fd; /* Tom de azul claro para o fundo */
+    margin: 0; /* Remove margens padrão do body */
+    height: 100vh; /* Define a altura do body para 100% da altura da janela de visualização */
+    font-family: Arial, sans-serif; /* Fonte consistente em toda a página */
+}
+
+#titulo {
+    background-color: rgb(30, 60, 120); /* Tom de azul escuro para o título */
+    color: #fff; /* Texto branco para contraste */
+    font-size: 2.5rem; /* Aumenta o tamanho da fonte do título */
+    text-align: center; /* Alinha o texto no centro do contêiner */
+    margin: 0; /* Remove margens padrão do h1 */
+    padding: 20px; /* Ajusta o preenchimento superior e inferior */
+    gap: 10px; /* Espaço entre os itens, se houver */
+}
+
+.formulario {
+    font-size: 1.2rem; /* Tamanho da fonte ajustado para consistência */
+    color: rgb(30, 60, 120); /* Tom de azul escuro para o texto do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    max-width: 600px; /* Define uma largura máxima para o formulário */
+    padding: 20px; /* Adiciona algum preenchimento interno */
+    background-color: #fff; /* Fundo branco para maior clareza */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.formulario-botoes {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center; /* Alinha os botões no centro */
+}
+
+.botao {
+    font-size: 1rem; /* Tamanho da fonte ajustado */
+    height: 45px;
+    width: 160px;
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: rgb(34, 193, 195); /* Tom de verde azulado para os botões */
+    color: #fff; /* Texto branco para contraste */
+    text-align: center;
+    line-height: 45px;
+    text-decoration: none; /* Remove sublinhado dos links */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    cursor: pointer; /* Indicador de clique */
+}
+
+/* Remove bordas dos links, se estiver aplicando em botões */
+a {
+    border: none;
+}
